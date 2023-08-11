@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenubarModule } from 'primeng/menubar';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+
+
 
 @NgModule({
-  declarations: [SidebarComponent],
-  imports: [CommonModule, RouterModule],
-  exports: [SidebarComponent],
+  declarations: [
+    MenuComponent
+  ],
+  imports: [
+    CommonModule,
+    PrimeNgModule
+  ],
+  exports:[MenuComponent]
 })
-export class SharedModule {}
+export class SharedModule { }
